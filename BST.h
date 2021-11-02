@@ -2,6 +2,7 @@
 #define BST_H
 
 #include "BSTInterface.h"
+#include "Node.h"
 
 #include <iostream>
 #include <string>
@@ -15,7 +16,7 @@ public:
     BST();
     ~BST();
 
-    NodeInterface* getRootNode() const;
+    Node* getRootNode() const;
     bool add(int data);
     bool add(Node* currentNode, int data);
     bool remove(int data);

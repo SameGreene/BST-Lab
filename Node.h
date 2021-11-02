@@ -9,15 +9,16 @@
 using namespace std;
 
 class Node: public NodeInterface{
-protected:
+public:
     Node* left = NULL;
     Node* right = NULL;
-public:    
-    Node();
+    int data;    
+    
+    Node(int data);
     ~Node();
 
     int getData() const;
-    NodeInterface* getLeftChild() const;
-    NodeInterface* getRightChild() const;
+    Node* getLeftChild() const;
+    Node* getRightChild() const;
 };
 #endif

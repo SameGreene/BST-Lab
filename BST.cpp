@@ -6,7 +6,7 @@
 BST::BST(){}
 BST::~BST(){}
 
-NodeInterface* BST::getRootNode(){
+Node* BST::getRootNode(){
 
 }
 
@@ -16,7 +16,7 @@ bool BST::add(int data){
     }
 }
 
-bool add(Node* currentNode, int data){
+bool BST::add(Node* currentNode, int data){
     if (currentNode == NULL){
         Node* newNode = new Node(data);
         currentNode = newNode;
@@ -33,10 +33,10 @@ bool add(Node* currentNode, int data){
     }
 }
 
-bool remove(int data){
+bool BST::remove(int data){
 
 }
 
-void clear(){
+void BST::clear(){
 
 }

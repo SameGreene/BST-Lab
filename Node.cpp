@@ -6,9 +6,9 @@
 int Node::getData() const{
     return data;
 }
-NodeInterface* Node::getLeftChild() const{
+Node* Node::getLeftChild() const{
     return left;
 }
-NodeInterface* Node::getRightChild() const{
+Node* Node::getRightChild() const{
     return right;
 }
