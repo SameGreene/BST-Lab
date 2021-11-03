@@ -12,7 +12,7 @@ class Node: public NodeInterface{
 public:
     Node* left = NULL;
     Node* right = NULL;
-    int data;    
+    int value;    
     
     Node(int data);
     ~Node();

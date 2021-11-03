@@ -3,8 +3,11 @@
 #include<iostream>
 #include<string>
 
+Node::Node(int data){}
+Node::~Node(){}
+
 int Node::getData() const{
-    return data;
+    return value;
 }
 Node* Node::getLeftChild() const{
     return left;

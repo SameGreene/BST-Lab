@@ -18,8 +18,11 @@ public:
 
     Node* getRootNode() const;
     bool add(int data);
-    bool add(Node* currentNode, int data);
+    bool addHelper(Node*& currentNode, int data);
     bool remove(int data);
+    bool removeHelper(Node*& local_root, int data);
+    void replace(Node*& old_root, Node*& local_root);
     void clear();
+    void clearHelper(Node* currentNode);
 };
 #endif
